@@ -31,7 +31,7 @@ console.log(myMap.has(1)); //returns boolean true or false
 console.log(object["1"] ===undefined) // use equality operator
 
 /*Getting the size:*/
-console.log(myMap.size())
+console.log(myMap.size)
 console.log(Object.keys(object).length)
 
 /*Adding a new element*/
