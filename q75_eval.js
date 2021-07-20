@@ -13,3 +13,13 @@ function avoidHoisting(expression){
 }
 
 avoidHoisting('var a=2;var b=5')
+
+//when you use strict, declarations made inside of eval() do not actually modify the enclosing scope
+
+
+function useStrict(expression){
+    "use strict"
+    eval(expression)
+    console.log(a,b) // reference error
+}
+useStrict('var a=2;var b=5')
