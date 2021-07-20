@@ -10,6 +10,14 @@ var message = 'The variable Has been hoisted';
 
 //The above code looks like as below to the interpretr
 
-var message;
-console.log(message);
-message = 'The variable Has been hoisted';
+
+// Functions are hoisted before variables
+
+console.log(a);// will output the function a(){} but not variable a, as functions are hoisted first
+var a;
+a = 'The variable Has been hoisted';
+
+function a(){
+    console.log("in fun")
+}
+
