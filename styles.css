@@ -1,0 +1,7 @@
+.content{
+    border:25px solid red;
+    padding:15px;
+    width: 500px;
+    box-sizing: border-box;
+    margin: 25px;
+}
