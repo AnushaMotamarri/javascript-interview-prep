@@ -1,0 +1,49 @@
+.parent-div{
+    height: 400px;
+    width: 400px;
+    background-color: aquamarine;
+    position: relative;
+}
+.child-div{
+    height: 100px ;
+    width: 100px;
+    position: absolute;
+    top:0;
+    left: 0;
+    background-color: red;
+    transition: 1s;
+    /* animation: left-to-right 2s ease-in-out  infinite forwards  ; */
+
+}
+.parent-div:hover .child-div{
+    transform: translateX(100%);
+    opacity: 0;
+    
+}
+
+@keyframes left-to-right {
+    0% {
+        top:0px;
+        left: 0px;
+        opacity: 0;
+    }
+    25%{
+        top:300px;
+        left: 0;
+    }
+    50%{
+        top:300px;
+        left: 300px;
+        opacity: 1;
+    }
+    74%{
+        top:0px;
+        left: 300px;
+        
+    }
+    100%{
+        top:0px;
+        left: 0px;
+        opacity: 0;
+    }
+}
